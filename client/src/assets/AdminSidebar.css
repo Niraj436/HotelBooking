@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.admin_list{
+    @apply py-3
+}
+
+.user_list{
+  @apply py-3
+}
+
+
+  
+  .admin_list.active {
+    background-color: blue;
+    color: #fff; 
+  }
+  .user_list.active {
+    background-color: rgb(48, 48, 232);
+    color: #fff; 
+  }

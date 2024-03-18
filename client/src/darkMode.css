@@ -1,0 +1,49 @@
+#dark {
+    background-color: black;
+    color: white !important;
+    
+  }
+  #dark .card {
+   background-color: black;
+   border: 2px rgb(62, 61, 61) solid;
+  
+  }
+  #dark .navBar{
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid white;
+  }
+  #dark .navBar li:hover{
+    color: white;
+  }
+  
+  #dark .card:hover{
+    color: white;
+  }
+  
+  #dark .hero{
+    background-color: black;
+  }
+  #dark .dark{
+    background-color: black;
+    color: white
+  }
+  #dark  input{
+    background-color: black;
+    color: white;
+    border:2px gray solid;
+  }
+  #dark label{
+    color: white;
+  }
+  #dark table thead{
+    background-color: black;
+    color: white;
+  }
+  #dark table:hover tr{
+    background-color: black;
+  }
+
+  
+
+  
