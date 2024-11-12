@@ -24,3 +24,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Enviroment varibales
+server/.env
+client/.env
+

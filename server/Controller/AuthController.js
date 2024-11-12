@@ -101,7 +101,7 @@ export const login = async (req, res, next) => {
     if (!user.isVerified) {
       return res.status(400).json({ error: "Please verify your account" });
     }
-    const token = await jwt.sign(
+    const token = jwt.sign(
       {
         id: user._id,
         isAdmin: user.isAdmin,
