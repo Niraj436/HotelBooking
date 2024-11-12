@@ -38,10 +38,10 @@ app.use(
 		credentials: true,
 	})
 );
-// app.get('/', (req, res) => {
-// 	res.send('Welcome to the Hotel Management System API');
-// });
-app.use('/', HotelRoute);
+app.get('/', (req, res) => {
+	res.send('Welcome to the Hotel Management System API');
+});
+app.use('/hotels', HotelRoute);
 app.use('/auth', AuthRoute);
 app.use('/rooms', RoomRoute);
 app.use('/user', UserRoute);
