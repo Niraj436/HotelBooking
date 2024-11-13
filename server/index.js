@@ -41,7 +41,7 @@ app.use(
 app.get('/', (req, res) => {
 	res
 		.status(200)
-		.json({ success: true, message: 'Welocme to hotel booking api' });
+		.json({ success: true, message: 'Welcome to hotel booking api' });
 });
 app.use('/hotels', HotelRoute);
 app.use('/auth', AuthRoute);

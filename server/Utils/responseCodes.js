@@ -8,4 +8,4 @@ const responseCodes = {
 	forbidden: 403,
 };
 
-module.exports = responseCodes;
+export default responseCodes;
