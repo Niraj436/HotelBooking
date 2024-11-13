@@ -1,6 +1,6 @@
 import Hotel from '../Model/HotelModel.js';
 import Room from '../Model/RoomModel.js';
-import * as responseCodes from '../Utils/responseCodes.js';
+import responseCodes from '../Utils/responseCodes.js';
 
 // CREATE
 export const createHotel = async (req, res, next) => {
