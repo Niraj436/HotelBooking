@@ -43,7 +43,7 @@ const AllHotels = () => {
 				<>
 					<div className='flex justify-around py-6 px-4 md:flex-row flex-col'>
 						<div className=' text-3xl font-bold'>All hotels</div>
-						<div className='md:block flex flex-col gap-'>
+						<div className='md:block flex flex-col gap-y-2'>
 							<input
 								type='search'
 								placeholder='Search Hotel'
@@ -53,7 +53,7 @@ const AllHotels = () => {
 								}}
 							/>
 							<button
-								className='btn btn-primary ml-2'
+								className='btn btn-primary ml-2 text-white'
 								onClick={handleSearch}>
 								Search
 							</button>
@@ -64,7 +64,7 @@ const AllHotels = () => {
 								return (
 									<div
 										key={hotel._id}
-										className='dark flex flex-col text-center  lg:flex-row lg:text-left gap-4 py-4 border border-gray-300 bg-slate-200 mx-3'>
+										className='dark flex flex-col md:text-center px-2 lg:flex-row lg:text-left gap-4 py-4 border border-gray-300 bg-slate-200 mx-3'>
 										<div className='lg:w-2/4 flex align-middle'>
 											<img
 												src={`${API}/${hotel?.photos[0]}`}
@@ -83,7 +83,7 @@ const AllHotels = () => {
 														{hotel.distance}
 													</span>
 												</p>
-												<div className='py-1'>
+												<div className='py-1 text-black'>
 													Rating: 5
 													<StarIcon
 														fontSize='small'
@@ -91,7 +91,7 @@ const AllHotels = () => {
 													/>{' '}
 												</div>
 												<div>
-													<p className='pr-10'>{hotel.desc}</p>
+													<p className='pr-10 text-black'>{hotel.desc}</p>
 												</div>
 												<div className='py-4'>
 													<Link
@@ -141,7 +141,7 @@ const AllHotels = () => {
 												<div className='py-4'>
 													<Link
 														to={`/hotel/${hotel._id}`}
-														className='btn btn-primary px-10 text-lg'>
+														className='btn btn-primary px-10 text-lg text-white'>
 														Book
 													</Link>
 												</div>
