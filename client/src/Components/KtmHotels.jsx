@@ -4,6 +4,7 @@ import { API } from '../config';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
+import Loader from './Loader';
 
 const KtmHotels = () => {
 	const [hotels, setHotels] = useState([]);
@@ -48,7 +49,7 @@ const KtmHotels = () => {
 	return (
 		<>
 			{loading ? (
-				<div className='text-center py-10'>Loading...</div>
+				<Loader />
 			) : (
 				<>
 					<div className='px-10'>
