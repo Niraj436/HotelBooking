@@ -80,7 +80,7 @@ const Hotel = () => {
 				<Loader />
 			) : (
 				<>
-					<div className='grid md:grid-cols-2 gap-x-5 px-10 py-6 bg-indigo-100 dark'>
+					<div className='grid md:grid-cols-2 gap-x-5 px-10 py-6 bg-indigo-100 text-black dark'>
 						<div className=' w-full '>
 							<img
 								src={`${API}/${hotel.photos}`}
@@ -127,11 +127,11 @@ const Hotel = () => {
 						</div>
 					</div>
 
-					<div className='overflow-x-auto px-4 '>
+					<div className='overflow-x-auto px-4 text-black '>
 						<p className='text-2xl font-semibold text-center py-3'>
 							Available Rooms
 						</p>
-						<table className='table bg-slate-100 text-center dark'>
+						<table className='table bg-slate-100 text-center text-black dark'>
 							{/* head */}
 							<thead className='dark '>
 								<tr className=''>

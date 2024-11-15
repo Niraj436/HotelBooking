@@ -64,7 +64,7 @@ const AllHotels = () => {
 								return (
 									<div
 										key={hotel._id}
-										className='dark flex flex-col md:text-center px-2 lg:flex-row lg:text-left gap-4 py-4 border border-gray-300 bg-slate-200 mx-3'>
+										className='dark text-black flex flex-col md:text-center px-2 lg:flex-row lg:text-left gap-4 py-4 border border-gray-300 bg-slate-200 mx-3'>
 										<div className='lg:w-2/4 flex align-middle'>
 											<img
 												src={`${API}/${hotel?.photos[0]}`}
@@ -83,7 +83,7 @@ const AllHotels = () => {
 														{hotel.distance}
 													</span>
 												</p>
-												<div className='py-1 text-black'>
+												<div className='py-1 '>
 													Rating: 5
 													<StarIcon
 														fontSize='small'
@@ -91,7 +91,7 @@ const AllHotels = () => {
 													/>{' '}
 												</div>
 												<div>
-													<p className='pr-10 text-black'>{hotel.desc}</p>
+													<p className='pr-10 '>{hotel.desc}</p>
 												</div>
 												<div className='py-4'>
 													<Link
